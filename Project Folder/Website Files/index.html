@@ -1,92 +1,91 @@
-</html>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cheap Air Tickets</title>
-  <link rel="stylesheet" type="text/css" href="../Website Files/css/styles.css">
+
+  <link rel="stylesheet" href="../Website Files/css/styles.css">
 </head>
 <body>
-  <header>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Welcome to Cheap Air Tickets</h1>
-        <p>Find the best deals on flights for your next adventure</p>
-        <a href="#search" class="btn btn-primary">Search Flights</a>
+  <!-- Left Navigation Bar -->
+  <nav class="left-nav">
+    <div class="burger-menu"></div>
+    <button id="burger-button" class="burger-button">
+      <span class="burger-bar"></span>
+      <span class="burger-bar"></span>
+      <span class="burger-bar"></span>
+    </button>
+    
+    <nav id="side-nav" class="side-nav">
+      <ul class="nav-links">
+        <li><a href="#customer-support">Customer Support</a></li>
+        <li><a href="#sign-in">Sign In</a></li>
+        <li><a href="#special-deals">Special Deals</a></li>
+        <li><a href="#corporate-sales">Corporate Sales</a></li>
+      </ul>
+    </nav>
+  </nav>
+
+  <!-- Ticket Information Submission Form -->
+  <section class="ticket-form">
+    <h2>Ticket Information</h2>
+    <form id="ticket-form">
+      <div>
+        <label for="trip-type">Trip Type:</label>
+        <div>
+          <input type="radio" id="one-way" name="trip-type" value="one-way" checked>
+          <label for="one-way">One Way</label>
+          <input type="radio" id="round-trip" name="trip-type" value="round-trip">
+          <label for="round-trip">Round Trip</label>
+        </div>
       </div>
-    </section>
-  </header>
-
-  <main>
-    <!-- Search Form -->
-    <section id="search" class="search">
-      <h2>Find Your Flight</h2>
-      <form action="search.php" method="GET">
-        <!-- Input fields for departure, destination, date, and passengers -->
-        <!-- Submit button -->
-      </form>
-    </section>
-
-    <!-- Featured Destinations -->
-    <section class="featured-destinations">
-      <h2>Featured Destinations</h2>
-      <div class="destination">
-        <img src="images/destination1.jpg" alt="Destination 1">
-        <h3>Destination 1</h3>
-        <p>Description of Destination 1</p>
-        <a href="destination1.html" class="btn btn-secondary">Learn More</a>
+      <div>
+        <label for="flight-number">Flight Number:</label>
+        <input type="text" id="flight-number" name="flight-number" required>
       </div>
-      <!-- Add more destination elements -->
-    </section>
-
-    <!-- Special Offers -->
-    <section class="special-offers">
-      <h2>Special Offers</h2>
-      <div class="offer">
-        <img src="images/offer1.jpg" alt="Special Offer 1">
-        <h3>Special Offer 1</h3>
-        <p>Details of Special Offer 1</p>
-        <a href="#" class="btn btn-secondary">View Offer</a>
+      <div>
+        <label for="flight-cost">Flight Cost:</label>
+        <input type="number" id="flight-cost" name="flight-cost" required>
       </div>
-      <!-- Add more offer elements -->
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials">
-      <h2>What Our Customers Say</h2>
-      <div class="testimonial">
-        <blockquote>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et diam mattis, dignissim elit nec, facilisis nulla.</p>
-        </blockquote>
-        <cite>John Doe</cite>
+      <div>
+        <label for="departure-date">Departure Date:</label>
+        <input type="date" id="departure-date" name="departure-date" required>
       </div>
-      <!-- Add more testimonial elements -->
-    </section>
+      <div>
+        <label for="return-date">Return Date:</label>
+        <input type="date" id="return-date" name="return-date">
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </section>
 
-    <!-- Flight Search Results -->
-    <section class="flight-search-results">
-      <h2>Flight Search Results</h2>
-      <!-- Display search results dynamically using JavaScript or a backend scripting language -->
-    </section>
+  <!-- Customer Support Section -->
+  <section id="customer-support" class="section">
+    <h2>Customer Support</h2>
+    <!-- Add content for customer support section -->
+  </section>
 
-    <!-- Call-to-Action Buttons -->
-    <section class="cta">
-      <a href="#" class="btn btn-primary">Book Now</a>
-      <a href="#" class="btn btn-secondary">Contact Us</a>
-    </section>
+  <!-- Sign In Section -->
+  <section id="sign-in" class="section">
+    <h2>Sign In</h2>
+    <!-- Add content for sign in section -->
+  </section>
 
-    <!-- Social Media Integration -->
-    <section class="social-media">
-      <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-      <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-    </section>
-  </main>
+  <!-- Special Deals Section -->
+  <section id="special-deals" class="section">
+    <h2>Special Deals</h2>
+    <!-- Add content for special deals section -->
+  </section>
 
-  <footer>
-    <p>&copy; 2023 Cheap Air Ticket. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+  <!-- Corporate Sales Section -->
+  <section id="corporate-sales" class="section">
+    <h2>Corporate Sales</h2>
+    <!-- Add content for corporate sales section -->
+  </section>
+  <script src="../Website Files/js/script.js"></script>
+  
 </body>
 </html>

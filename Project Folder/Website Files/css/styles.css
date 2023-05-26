@@ -2,163 +2,139 @@
 
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Header Styles */
-  header {
-    background-color: #f5f5f5;
-    padding: 20px;
-  }
-  
-  .hero {
-    text-align: center;
-    padding: 50px 0;
-  }
-  
-  .hero h1 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .hero p {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #007bff;
-    border-radius: 4px;
-  }
-  
-  .btn-secondary {
-    background-color: #6c757d;
-  }
-  
-  /* Search Form Styles */
-  .search {
-    text-align: center;
-    padding: 50px 0;
-  }
-  
-  .search h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  /* Featured Destinations Styles */
-  .featured-destinations {
-    padding: 50px 0;
-  }
-  
-  .featured-destinations h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .destination {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .destination img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-  }
-  
-  .destination h3 {
-    font-size: 20px;
-    margin-top: 10px;
-  }
-  
-  /* Special Offers Styles */
-  .special-offers {
-    background-color: #f5f5f5;
-    padding: 50px 0;
-  }
-  
-  .special-offers h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .offer {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .offer img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-  }
-  
-  .offer h3 {
-    font-size: 20px;
-    margin-top: 10px;
-  }
-  
-  /* Testimonials Styles */
-  .testimonials {
-    padding: 50px 0;
-  }
-  
-  .testimonials h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .testimonial {
-    margin-bottom: 30px;
-  }
-  
-  .testimonial blockquote {
-    font-size: 18px;
-    color: #555;
-  }
-  
-  .testimonial cite {
-    font-size: 16px;
-    color: #888;
-  }
-  
-  /* Call-to-Action Styles */
-  .cta {
-    text-align: center;
-    padding: 50px 0;
-  }
-  
-  .cta a {
-    margin: 10px;
-  }
-  
-  /* Social Media Styles */
-  .social-media {
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  .social-link {
-    font-size: 24px;
-    color: #333;
-    margin: 0 10px;
-  }
-  
-  /* Footer Styles */
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+/* Left Navigation Bar Styles */
+.left-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  transition: width 0.3s ease-in-out;
+}
+
+.left-nav.slim {
+  width: 60px;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.nav-links li {
+  margin-bottom: 10px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Ticket Information Form Styles */
+.ticket-form {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.ticket-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.ticket-form input[type="radio"],
+.ticket-form input[type="text"],
+.ticket-form input[type="number"],
+.ticket-form input[type="date"],
+.ticket-form button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.ticket-form button {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.ticket-form button:hover {
+  background-color: #555;
+}
+
+/* Additional Section Styles */
+.section {
+  margin: 50px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+/* CSS for burger menu */
+.burger-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.burger-bar {
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  margin-bottom: 6px;
+}
+
+/* CSS for side navigation */
+.side-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #f0f0f0;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.side-nav.open {
+  transform: translateX(0);
+}
+
+.nav-links {
+  list-style: none;
+  padding: 20px;
+}
+
+.nav-links li {
+  margin-bottom: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+}
+
